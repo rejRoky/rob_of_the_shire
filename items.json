@@ -1,0 +1,10 @@
+[
+    {"name": "sword", "type": "weapon", "damage": 30, "defense": 8},
+    {"name": "shield", "type": "weapon", "damage": 5, "defense": 20},
+    {"name": "heal potion", "type": "potion", "heal": 50},
+    {"name": "map", "type": "quest"},
+    {"name": "axe", "type": "weapon", "damage": 50, "defense": 4},
+    {"name": "beauty potion", "type": "potion", "prettiness": 40},
+    {"name": "spyglass", "type": "quest"},
+    {"name": "halberd", "type": "weapon", "damage": 6, "defense": 12}
+]
