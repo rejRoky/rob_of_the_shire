@@ -1,12 +1,13 @@
 ### Project Structure
 ```
 rob_of_the_shire/
-├── main.py              # CLI interface and main loop
-├── character.py         # Character class
-├── getfilter.py         # Filtering utility
-├── itemloader.py        # Loads items from external file
+├── main.py              # Main program, user interaction
+├── character.py         # Character class, inventory and combat logic
+├── getfilter.py         # Filtering utility for inventory items
+├── itemloader.py        # Load items from JSON data
 ├── save_system.py       # Save/load system
-├── enemy.py             # Enemy class
-└── items.json           # External data file (items)
-└── README.md            # Project documentation
+├── enemy.py             # Enemy class for combat
+├── items.json           # External data file with items
+└── requirements.txt     # Project dependencies (if any in future)
+
 ```
