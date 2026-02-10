@@ -1,10 +1,288 @@
 [
-    {"name": "sword", "type": "weapon", "damage": 30, "defense": 8},
-    {"name": "shield", "type": "weapon", "damage": 5, "defense": 20},
-    {"name": "heal potion", "type": "potion", "heal": 50},
-    {"name": "map", "type": "quest"},
-    {"name": "axe", "type": "weapon", "damage": 50, "defense": 4},
-    {"name": "beauty potion", "type": "potion", "prettiness": 40},
-    {"name": "spyglass", "type": "quest"},
-    {"name": "halberd", "type": "weapon", "damage": 6, "defense": 12}
+    {
+        "name": "Iron Sword",
+        "type": "weapon",
+        "damage": 25,
+        "defense": 5,
+        "rarity": "COMMON",
+        "description": "A sturdy iron blade, reliable in combat.",
+        "value": 50,
+        "level_requirement": 1
+    },
+    {
+        "name": "Steel Longsword",
+        "type": "weapon",
+        "damage": 35,
+        "defense": 8,
+        "rarity": "UNCOMMON",
+        "description": "A well-crafted steel longsword with good balance.",
+        "value": 120,
+        "level_requirement": 5
+    },
+    {
+        "name": "Enchanted Blade",
+        "type": "weapon",
+        "damage": 50,
+        "defense": 10,
+        "rarity": "RARE",
+        "description": "A blade imbued with magical energy.",
+        "value": 350,
+        "level_requirement": 10
+    },
+    {
+        "name": "Dragon Slayer",
+        "type": "weapon",
+        "damage": 75,
+        "defense": 15,
+        "rarity": "EPIC",
+        "description": "Legendary sword forged to slay dragons.",
+        "value": 1000,
+        "level_requirement": 20
+    },
+    {
+        "name": "Wooden Shield",
+        "type": "weapon",
+        "subtype": "shield",
+        "damage": 5,
+        "defense": 20,
+        "rarity": "COMMON",
+        "description": "A basic wooden shield for blocking attacks.",
+        "value": 30,
+        "level_requirement": 1
+    },
+    {
+        "name": "Iron Shield",
+        "type": "weapon",
+        "subtype": "shield",
+        "damage": 8,
+        "defense": 35,
+        "rarity": "UNCOMMON",
+        "description": "A reinforced iron shield.",
+        "value": 100,
+        "level_requirement": 5
+    },
+    {
+        "name": "Battle Axe",
+        "type": "weapon",
+        "damage": 45,
+        "defense": 3,
+        "rarity": "UNCOMMON",
+        "description": "A heavy two-handed axe that deals massive damage.",
+        "value": 150,
+        "level_requirement": 8
+    },
+    {
+        "name": "War Hammer",
+        "type": "weapon",
+        "damage": 55,
+        "defense": 5,
+        "rarity": "RARE",
+        "description": "A crushing hammer that ignores some armor.",
+        "value": 280,
+        "level_requirement": 12
+    },
+    {
+        "name": "Longbow",
+        "type": "weapon",
+        "damage": 30,
+        "defense": 0,
+        "rarity": "COMMON",
+        "description": "A ranged weapon for attacking from afar.",
+        "value": 80,
+        "level_requirement": 3
+    },
+    {
+        "name": "Elven Bow",
+        "type": "weapon",
+        "damage": 45,
+        "defense": 0,
+        "rarity": "RARE",
+        "description": "An elegant elven bow with incredible accuracy.",
+        "value": 400,
+        "level_requirement": 15
+    },
+    {
+        "name": "Healing Potion",
+        "type": "potion",
+        "heal": 50,
+        "rarity": "COMMON",
+        "description": "Restores 50 health points.",
+        "value": 25,
+        "level_requirement": 1
+    },
+    {
+        "name": "Greater Healing Potion",
+        "type": "potion",
+        "heal": 100,
+        "rarity": "UNCOMMON",
+        "description": "Restores 100 health points.",
+        "value": 60,
+        "level_requirement": 5
+    },
+    {
+        "name": "Supreme Healing Potion",
+        "type": "potion",
+        "heal": 200,
+        "rarity": "RARE",
+        "description": "Restores 200 health points.",
+        "value": 150,
+        "level_requirement": 10
+    },
+    {
+        "name": "Mana Potion",
+        "type": "potion",
+        "mana": 30,
+        "rarity": "COMMON",
+        "description": "Restores 30 mana points.",
+        "value": 30,
+        "level_requirement": 1
+    },
+    {
+        "name": "Greater Mana Potion",
+        "type": "potion",
+        "mana": 75,
+        "rarity": "UNCOMMON",
+        "description": "Restores 75 mana points.",
+        "value": 75,
+        "level_requirement": 5
+    },
+    {
+        "name": "Elixir of Life",
+        "type": "potion",
+        "heal": 150,
+        "mana": 50,
+        "rarity": "EPIC",
+        "description": "Restores both health and mana.",
+        "value": 250,
+        "level_requirement": 15
+    },
+    {
+        "name": "Strength Potion",
+        "type": "consumable",
+        "buff": "+10 Strength",
+        "duration": 5,
+        "rarity": "UNCOMMON",
+        "description": "Temporarily increases strength for 5 turns.",
+        "value": 80,
+        "level_requirement": 5
+    },
+    {
+        "name": "Leather Armor",
+        "type": "armor",
+        "defense": 15,
+        "health_bonus": 10,
+        "rarity": "COMMON",
+        "description": "Basic leather protection.",
+        "value": 60,
+        "level_requirement": 1
+    },
+    {
+        "name": "Chainmail",
+        "type": "armor",
+        "defense": 30,
+        "health_bonus": 25,
+        "rarity": "UNCOMMON",
+        "description": "Interlocking metal rings provide solid defense.",
+        "value": 200,
+        "level_requirement": 8
+    },
+    {
+        "name": "Plate Armor",
+        "type": "armor",
+        "defense": 50,
+        "health_bonus": 50,
+        "rarity": "RARE",
+        "description": "Full plate armor for maximum protection.",
+        "value": 500,
+        "level_requirement": 15
+    },
+    {
+        "name": "Dragon Scale Armor",
+        "type": "armor",
+        "defense": 75,
+        "health_bonus": 100,
+        "rarity": "LEGENDARY",
+        "description": "Armor crafted from dragon scales, nearly impenetrable.",
+        "value": 2000,
+        "level_requirement": 25
+    },
+    {
+        "name": "Ring of Power",
+        "type": "accessory",
+        "damage": 10,
+        "mana_bonus": 20,
+        "rarity": "RARE",
+        "description": "A mysterious ring that enhances power.",
+        "value": 300,
+        "level_requirement": 10
+    },
+    {
+        "name": "Amulet of Vitality",
+        "type": "accessory",
+        "health_bonus": 50,
+        "rarity": "UNCOMMON",
+        "description": "An amulet that increases life force.",
+        "value": 180,
+        "level_requirement": 7
+    },
+    {
+        "name": "Lucky Charm",
+        "type": "accessory",
+        "rarity": "RARE",
+        "description": "Increases critical hit chance.",
+        "value": 250,
+        "level_requirement": 5
+    },
+    {
+        "name": "Treasure Map",
+        "type": "quest",
+        "rarity": "UNCOMMON",
+        "description": "An old map leading to hidden treasure.",
+        "value": 100,
+        "level_requirement": 1
+    },
+    {
+        "name": "Ancient Scroll",
+        "type": "quest",
+        "rarity": "RARE",
+        "description": "A scroll with mysterious ancient writing.",
+        "value": 150,
+        "level_requirement": 1
+    },
+    {
+        "name": "Spyglass",
+        "type": "quest",
+        "rarity": "COMMON",
+        "description": "Useful for scouting distant locations.",
+        "value": 40,
+        "level_requirement": 1
+    },
+    {
+        "name": "Golden Key",
+        "type": "quest",
+        "rarity": "EPIC",
+        "description": "Opens a legendary vault somewhere in the shire.",
+        "value": 500,
+        "level_requirement": 1
+    },
+    {
+        "name": "Rusty Dagger",
+        "type": "weapon",
+        "damage": 10,
+        "defense": 2,
+        "rarity": "COMMON",
+        "description": "A worn-out dagger, better than nothing.",
+        "value": 15,
+        "level_requirement": 1
+    },
+    {
+        "name": "Staff of Wisdom",
+        "type": "weapon",
+        "damage": 20,
+        "mana_bonus": 30,
+        "rarity": "RARE",
+        "description": "A magical staff that enhances mana capacity.",
+        "value": 350,
+        "level_requirement": 10
+    }
 ]

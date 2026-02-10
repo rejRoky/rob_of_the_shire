@@ -1,0 +1,18 @@
+# Rob of the Shire - Requirements
+# ================================
+# This project uses Python standard library only for core functionality.
+# These are optional development dependencies.
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code Quality (optional)
+mypy>=1.0.0
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+
+# Documentation (optional)
+sphinx>=6.0.0
+sphinx-rtd-theme>=1.2.0
